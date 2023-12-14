@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial,sans-serif;
+        }
+        .cronometro{ /* Sempre colocar "." ao se referir a uma DIV */
+            margin: 50px auto;
+            width: 200px;
+        }
+        .display{
+            font-size: 35px;
+        }
+        .botoes{
+            font-size: 16px;
+            padding: 5px 10px;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="cronometro">
+        <div class="display">
+            <span id="minutos">00</span>:<span id="segundos">00</span> <!-- -->
+        </div>
+            <div class="botoes">
+                <button id="iniciar">Iniciar</button>
+                <button id="parar">Parar</button>
+                <button id="zerar">Zerar</button>
+            </div>
+    </div>
+    <script src="cronometro.js"></script>
+
+</body>
+</html>
